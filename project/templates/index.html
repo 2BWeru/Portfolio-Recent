@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    
+
+
+
+<nav  style="position: fixed;background-color: black;" class="navbar navbar-expand-md  fixed-top maine-menu">
+    <div class="container">
+      <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#projects" tabindex="-1" aria-disabled="true">Projects</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Skills</a></li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="#testimonial" tabindex="-1" aria-disabled="true">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid fh5co-home-banner">
+    <div class="card"> <img class="card-img" src="/static/img/pexels-neo-2653362.jpg" alt="">
+      <div class="card-img-overlay">
+        <div class="center-text">
+          <h2 class="card-title">Betty Wamaitha Weru</h2>
+          <br>
+          <h4 style="color: aliceblue;">Front End Web Developer</h4>
+          <p><a href=""></a></p>
+          <a href="http://www.linkedin.com/in/betty-wamaitha-weru" class="btn">
+            <svg width="201" height="51" viewBox="0 0 201 51">
+              <defs>
+                <style>
+                .cls-1 {
+                  fill: none;
+                  stroke-width: 1px;
+                  stroke: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#e90e65"/>
+                <stop offset="1" stop-color="#fff"/>
+              </linearGradient>
+            </defs>
+            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
+          </svg>
+            Linked</a>
+          <br>
+          <a href="https://github.com/2BWeru/" class="btn">
+            <svg width="201" height="51" viewBox="0 0 201 51">
+              <defs>
+                <style>
+                .cls-1 {
+                  fill: none;
+                  stroke-width: 1px;
+                  stroke: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#e90e65"/>
+                <stop offset="1" stop-color="#fff"/>
+              </linearGradient>
+            </defs>
+            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
+          </svg>
+           Github</a>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fh5co-two-img">
+    <div class="row">
+      <div class="col-sm-6 pr-0 pl-0">
+        <div class="card"> <img class="card-img" src="/static/img/girl1.jpg" alt="">
+          <div class="card-img-overlay"> </div>
+        </div>
+      </div>
+      <div class="col-sm-6 pr-0 pl-0">
+        <div class="card"> <img class="card-img" src="/static/img/girl2.jpg" alt="">
+          <div class="card-img-overlay"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid fh5co-recent-work">
+    <div class="container contact-pop">
+      <div class="row">
+        <div class="col-md-6  pr-0">
+          <div class="card"> <img class="card-img w-100" src="/static/img/pexels-cottonbro-5076523.jpg" height="500px" alt="">
+            <div class="card-img-overlay"> </div>
+          </div>
+        </div>
+        <div class="col-md-6 pl-0" id="about">
+          <div class="content">
+            <h1>About</h1>
+            <!-- <h3>Who is Betty </h3> -->
+            <hr/>
+            <br>
+            <h5>I Am a curiosity-driven <b> Front End Developer </b> passionate about bringing clients ideas to life in the form of websites  .
+            </h5>
+              <br>
+              <h5>My goal is to work at a company where I can deliver business value while also leveling up my skills as a Developer</h5>
+            <a href="#testimonial" class="btn">CONTACT</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="container recent" id="activity">
+        <h3>Skills & Tools</h3>
+        <hr />
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" > 
+                 <img class="card-img" src="/static/img/angular.png"  class="rounded-circle" style="height:70px; width:70px;" alt="">
+                <h5 style="text-align: center;">Angular</h5>
+              </div>
+            </div>
+            <div class="col-sm">
+                <div class="card"> <img class="card-img" src="/static/img/git2.png" class="rounded-circle" style="height:70px; width:70px;"  alt="">
+                  <h5 style="text-align: center;">Git</h5>
+                </div>
+              </div>
+            <div class="col-sm">
+                <div class="card"> <img class="card-img" src="/static/img/django.png" class="rounded-circle"  style="height:70px; width:70px;"  alt="">
+                  <h5 style="text-align: center;">Django</h5>
+                </div>
+            </div> 
+            
+        </div>
+        <hr />
+  
+        <div class="row">
+          <div class="col-sm">
+              <div class="card"> <img class="card-img" src="/static/img/css.png" class="rounded-circle" style="height:70px; width:70px;" alt="">
+                <h5 style="text-align: center;">Css</h5>
+              </div>
+          </div>
+          <div class="col-sm">
+              <div class="card"> <img class="card-img" src="/static/img/pyth.png" class="rounded-circle" style="height:70px; width:70px;" alt="">
+                <h5 style="text-align: center;">Python</h5>
+              </div>
+          </div>
+          <div class="col-sm">
+              <div class="card"> <img class="card-img" src="/static/img/html2.png" class="rounded-circle" style="height:70px; width:70px;" alt="">
+                <h5 style="text-align: center;">Html</h5>
+              </div>
+          </div>
+          
+        </div>
+        <hr />
+  
+        <div class="row">
+          <div class="col-sm">
+            <div class="card"> <img class="card-img" src="/static/img/jquery.png"  class="rounded-circle" style="height:70px; width:70px;"  alt="">
+              <h5 style="text-align: center;">JQuery</h5>
+            </div>
+        </div>
+        <div class="col-sm">
+          <div class="card"> <img class="card-img" src="/static/img/js.png"  class="rounded-circle" style="height:70px; width:70px;"  alt="">
+            <h5 style="text-align: center;">JavaScript</h5>
+           
+          </div>
+      </div>
+          <div class="col-sm">
+            <div class="card"> <img class="card-img" src="/static/img/bootstrap2.jpeg" class="rounded-circle" style="height:70px; width:70px;" alt="">
+              <h5 style="text-align: center;">Bootstrap</h5>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  <hr />
+  <div class="container-fluid fh5co-recent-work activity" id="projects">
+    <div class="container recent">
+      <div class="row">
+        <h2>Projects</h2>
+        <div class="owl-carousel owl-carousel3 owl-theme">
+          <div>
+            <div class="card">
+               <img class="card-img" src="/static/img/pizza__b.png" height="600" alt="">
+               <div class="card-img-overlay">
+                 <br>
+              <div class="top-text">
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-danger" style="padding-top: 2px;">
+                      <a href="https://github.com/2BWeru/Pizza-Grill" style="text-align: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                      </a>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-danger" style="padding-top: 2px;">
+                      <a href="https://2bweru.github.io/Pizza_Me/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 256C0 209.4 12.47 165.6 34.27 127.1L144.1 318.3C166 357.5 207.9 384 256 384C270.3 384 283.1 381.7 296.8 377.4L220.5 509.6C95.9 492.3 0 385.3 0 256zM365.1 321.6C377.4 302.4 384 279.1 384 256C384 217.8 367.2 183.5 340.7 160H493.4C505.4 189.6 512 222.1 512 256C512 397.4 397.4 511.1 256 512L365.1 321.6zM477.8 128H256C193.1 128 142.3 172.1 130.5 230.7L54.19 98.47C101 38.53 174 0 256 0C350.8 0 433.5 51.48 477.8 128V128zM168 256C168 207.4 207.4 168 256 168C304.6 168 344 207.4 344 256C344 304.6 304.6 344 256 344C207.4 344 168 304.6 168 256z"/></svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+                <div class="bottom-text">
+                  <h5 class="card-title">Pizz__Bites</h5>
+                  <a>
+                    <h6 style="color: white;">A pizza website where one can make an order and receive prioduct via delivery </h6>
+                      <!-- <br> -->
+                  <div class="row">
+                    <div class="col">
+                      <b style="color: white;">JavaScript</b>
+                    </div>
+                    <div class="col">
+                      <b style="color: white;">HTML5</b>
+                    </div>
+                    <div class="col">
+                      <b style="color: white;">CSS</b>
+                    </div>
+                  </div>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <img class="card-img" src="/static/img/runaway__p.png"  height="600" alt="">
+              <div class="card-img-overlay">
+                <br>
+             <div class="top-text">
+               <div class="row">
+                 <div class="col">
+                   <button class="btn btn-danger" style="padding-top: 2px;">
+                     <a href="https://github.com/2BWeru/Project-Review">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                     </a></button>
+                 </div>
+                 <div class="col">
+                   <button class="btn btn-danger" style="padding-top: 2px;">
+                     <a href="https://project-runaway4.herokuapp.com/">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 256C0 209.4 12.47 165.6 34.27 127.1L144.1 318.3C166 357.5 207.9 384 256 384C270.3 384 283.1 381.7 296.8 377.4L220.5 509.6C95.9 492.3 0 385.3 0 256zM365.1 321.6C377.4 302.4 384 279.1 384 256C384 217.8 367.2 183.5 340.7 160H493.4C505.4 189.6 512 222.1 512 256C512 397.4 397.4 511.1 256 512L365.1 321.6zM477.8 128H256C193.1 128 142.3 172.1 130.5 230.7L54.19 98.47C101 38.53 174 0 256 0C350.8 0 433.5 51.48 477.8 128V128zM168 256C168 207.4 207.4 168 256 168C304.6 168 344 207.4 344 256C344 304.6 304.6 344 256 344C207.4 344 168 304.6 168 256z"/></svg>
+                     </a>
+                   </button>
+                 </div>
+               </div>
+             </div>
+               <div class="bottom-text">
+                 <h5 class="card-title">Project Runaway</h5>
+                 <a>
+                   <h6 style="color: white;">This is a website that creates and share Quotes. It allows users to like,<br>
+                     dislike and delete quotes</h6>
+                     <!-- <br> -->
+                 <div class="row">
+                   <div class="col">
+                     <b style="color: white;">Django</b>
+                   </div>
+                   <div class="col">
+                     <b style="color:white;">Python</b>
+                   </div>
+                   <div class="col">
+                     <b style="color: white;">HTML</b>
+                   </div>
+                   <div class="col">
+                     <b style="color:white;">CSS</b>
+                   </div>
+                   
+                 </div>
+                 </a>
+                 
+               </div>
+             </div>
+           </div>
+         </div>
+         <div>
+          <div class="card">
+            <img class="card-img" src="/static/img/hang.png" height="600" alt="">
+            <div class="card-img-overlay">
+              <br>
+           <div class="top-text">
+             <div class="row">
+               <div class="col">
+                 <button class="btn btn-danger" style="padding-top: 2px;">
+                   <a href="https://github.com/2BWeru/Hangouts">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5
+                         0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2
+                           2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                   </a>
+                 </button>
+               </div>
+               <div class="col">
+                 <button class="btn btn-danger" id="link" onclick="myFunction()" style="padding-top: 2px;">
+                  <a href="#portfolio">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 256C0 209.4 12.47 165.6 34.27 127.1L144.1 318.3C166 357.5 207.9 384 256 384C270.3 384 283.1 381.7 296.8 377.4L220.5 509.6C95.9 492.3 0 385.3 0 256zM365.1 321.6C377.4 302.4 384 279.1 384 256C384 217.8 367.2 183.5 340.7 160H493.4C505.4 189.6 512 222.1 512 256C512 397.4 397.4 511.1 256 512L365.1 321.6zM477.8 128H256C193.1 128 142.3 172.1 130.5 230.7L54.19 98.47C101 38.53 174 0 256 0C350.8 0 433.5 51.48 477.8 128V128zM168 256C168 207.4 207.4 168 256 168C304.6 168 344 207.4 344 256C344 304.6 304.6 344 256 344C207.4 344 168 304.6 168 256z"/></svg>
+                  </a></button>
+               </div>
+             </div>
+           </div>
+             <div class="bottom-text">
+               <h5 class="card-title">Hangouts</h5>
+               <a>
+                 <h6 style="color: white;">An event website that display events and site locations for various category of activities </h6>
+                   <!-- <br> -->
+               <div class="row">
+                 <div class="col">
+                   <b style="color: white;">Angular</b>
+                 </div>
+                 <div class="col">
+                   <b style="color:white;">Js</b>
+                 </div>
+                 <div class="col">
+                   <b style="color: white;">Django Rest <br>Framework</b>
+                 </div>
+                 
+               </div>
+               </a>
+               
+             </div>
+           </div>
+         </div>
+         </div>
+         <div class="card">
+          <img class="card-img" src="/static/img/neigh.png"  height="600" alt="">
+          <div class="card-img-overlay">
+            <br>
+         <div class="top-text">
+           <div class="row">
+             <div class="col">
+               <button class="btn btn-danger" style="padding-top: 2px;">
+                 <a href="https://github.com/2BWeru/Riverdale-Springs">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                 </a></button>
+             </div>
+             <div class="col">
+               <button class="btn btn-danger" style="padding-top: 2px;">
+                 <a href="https://riverdale2001.herokuapp.com/">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 256C0 209.4 12.47 165.6 34.27 127.1L144.1 318.3C166 357.5 207.9 384 256 384C270.3 384 283.1 381.7 296.8 377.4L220.5 509.6C95.9 492.3 0 385.3 0 256zM365.1 321.6C377.4 302.4 384 279.1 384 256C384 217.8 367.2 183.5 340.7 160H493.4C505.4 189.6 512 222.1 512 256C512 397.4 397.4 511.1 256 512L365.1 321.6zM477.8 128H256C193.1 128 142.3 172.1 130.5 230.7L54.19 98.47C101 38.53 174 0 256 0C350.8 0 433.5 51.48 477.8 128V128zM168 256C168 207.4 207.4 168 256 168C304.6 168 344 207.4 344 256C344 304.6 304.6 344 256 344C207.4 344 168 304.6 168 256z"/></svg>
+                 </a>
+               </button>
+             </div>
+           </div>
+         </div>
+           <div class="bottom-text">
+             <h5 class="card-title">Riverdale Springs</h5>
+             <a>
+               <h6 style="color: white;">A Neighborhood community websites that alllows users to views posts from their neighborhoods.View Announcements,Business contacts and other neighborhood details. </h6>
+                 <!-- <br> -->
+             <div class="row">
+               <div class="col">
+                 <b style="color: white;">Django</b>
+               </div>
+               <div class="col">
+                 <b style="color: white;">Python</b>
+               </div>
+               <div class="col">
+                 <b style="color: white;">JQuery</b>
+               </div>
+               <div class="col">
+                 <b style="color: white;">Bootstrap</b>
+               </div>
+               
+             </div>
+             </a>
+             
+           </div>
+       </div>
+     </div>
+     <div>
+       </div>
+       <div>     
+     </div>
+     <div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  <div class="container-fluid recent fh5co-portfolio" id="portfolio" style="display: none;"> 
+    <div class="container">
+      <h4>Hangouts Website</h4>
+      <div class="row">
+        <div class="bx bx-1">
+          <div class="card"> 
+            <iframe width="1160" height="515" src="https://www.youtube.com/embed/ai1EHgQ2iTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fh5co-about-me" id="testimonial">
+    <div class="row" style="background-color: #e90e65;">
+      <div class="col">
+        <div id="my-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="card"> <img class="card-img d-block w-100" src="/static/img/about-me-img.jpg" alt="">
+              <div class="card-img-overlay">
+                <h2>  Contacts </h2>
+                <!-- <hr/> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-md-block"> 
+                <img src="/static/img/tel.jpg" alt="" class="rounded-circle" height="100">
+                 <br>
+                <h4><b>Phone Number</b></h4>
+                <br>
+                <mark>+254 113 327 116</mark>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="carousel-caption d-md-block"> 
+                <img src="/static/img/github.png" alt="" class="rounded-circle" height="100">
+                <br>
+                <h4><b>Github</b></h4>
+                <br>
+                <mark><a href="https://github.com/2BWeru/">2BWeru </a></mark>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-md-block"> 
+                <img src="/static/img/email.png" alt="" class="rounded-circle" height="100">
+                <br>
+                <h4><b>Email</b></h4>
+                <br>
+                <mark><a href="Mailto:wamaithaweru19@gmail.com">wamaithaweru19@gmail.com</a></mark>
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#my-carousel" data-slide-to="0" > <img src="/static/img/about-me-img2.png" alt=""> <span>Tel</span> </li>
+            <li class="active" data-target="#my-carousel" data-slide-to="1" aria-current="location"> <img src="assets/img/about-me-img2.png" alt=""> <span>Github</span> </li>
+            <li data-target="#my-carousel" data-slide-to="2"> <img src="/static/img/about-me-img3.png" alt=""> <span>Email</span> </li>
+          </ol>
+        </div>
+      </div>
+      <div class="col" >
+        <footer class="container-fluid p-0 pr-0">
+          <div class="row mr-0 ml-0">
+            <div class="col-lg-12 content-us">
+              <div class="contact-form">
+                <h3 class="text-uppercase">Get in touch</h3>
+                <form id="contact">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                <input type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                <textarea class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                <button type="submit" id="send">Send</button>
+                <button type="button" id="send2" data-toggle="modal" data-target="#exampleModal">View Message</button>
+  
+                </form>
+              </div>
+              
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Information</h5>
+        <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close" >
+          <span aria-hidden="true"><i class="fa fa-close">x</i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+    
+            <div class="row g-0">
+    
+                <div class="col-md-8 border-right">
+    
+                    <div class="status p-3">
+                      <h4>Hello <span class="name-id"></span>,</h4>
+                      <br>
+                      <p class="name-txt"></p>
+                    </div>
+    
+                </div>
+                <div class="col-md-4">
+    
+                    <div class="p-2 text-center">
+    
+                        <div class="profile">
+                            <img src="/static/img/favicon.png" width="100" class="rounded-circle img-thumbnail">
+    
+                            <span class="d-block mt-3 font-weight-bold">Betty Wamaitha </span>
+    
+                        </div>
+    
+                    </div>
+                    
+                </div>
+       
+            </div>
+    
+    
+    
+      </div>
+    
+    </div>
+    </div>
+    </div>
+            </div>
+          </div>
+          
+        </footer>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Button trigger modal -->
+ 
+  <!-- <app-contact></app-contact> -->
+  
+  <footer>
+    <div class="copy pt-4 pb-2">
+      <p><a> &copy; 2022</a>  &nbsp;  |  &nbsp; Design by <a >Betty Weru</a> &nbsp; | &nbsp;  All rights reserved</p>
+    </div>
+  </footer>
+  <script src="/static/js/jquery-3.3.1.slim.min.js"></script> 
+  <script src="/static/js/popper.min.js" ></script> 
+  <script src="/static/js/bootstrap.min.js"></script> 
+  <script src="/static/js/owl.carousel.min.js"></script> 
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/script.js"></script>
+
+ 
+
+</body>
+</html>
