@@ -40,3 +40,25 @@ $(document).ready(function(){
     x.style.display = "none";
   }
   };
+
+  // email
+  var email = document.getElementById('email').val();
+  var message = document.getElementById('message').val();
+  var name = document.getElementById('name').val();
+
+
+  // function sendEmail() {
+    
+  //   Email.send({
+  //     Host: "smtp.gmail.com",
+  //     Username: "wamaithaweru19@gmail.com",
+  //     Password: "aegmangfmodzfdoj",
+  //     To: 'wamaithaweru19@gmail.com',
+  //     From: email,
+  //     Subject: name,
+  //     Body: message,
+  //   })
+  //     .then(function (message) {
+  //       alert("mail sent successfully")
+  //     });
+  // }
