@@ -404,7 +404,7 @@
   </div>
   <div class="container-fluid fh5co-about-me" id="testimonial">
     <div class="row" style="background-color: #e90e65;">
-      <div class="col">
+      <div class="col-sm-6 pr-0 pl-0">
         <div id="my-carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="card"> <img class="card-img d-block w-100" src="/static/img/about-me-img.jpg" alt="">
@@ -448,20 +448,21 @@
           </ol>
         </div>
       </div>
-      <div class="col" >
+      <div class="col-sm-6 pr-0 pl-0" >
         <footer class="container-fluid p-0 pr-0">
           <div class="row mr-0 ml-0">
             <div class="col-lg-12 content-us">
               <div class="contact-form">
                 <h3 class="text-uppercase">Get in touch</h3>
-                <form id="contact">
-                <input type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                <input type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                <textarea class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                <form id="contact" method="POST">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                <textarea class="form-control" id="message" name="message" placeholder="Your Message" required></textarea>
                 <button type="submit" id="send">Send</button>
+              </form>
                 <button type="button" id="send2" data-toggle="modal" data-target="#exampleModal">View Message</button>
   
-                </form>
+                
               </div>
               
   <!-- Modal -->
@@ -470,7 +471,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Contact Information</h5>
-        <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close" >
+        <button type="button" class="close btn btn-danger" onClick="window.location.href=window.location.href" data-dismiss="modal" aria-label="Close" >
           <span aria-hidden="true"><i class="fa fa-close">x</i></span>
         </button>
       </div>

@@ -136,10 +136,12 @@ MEDIA_ROOT=os.path.join(BASE_DIR, "static")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+django_heroku.settings(locals())
+
+
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS=True
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
 EMAIL_HOST_USER='wamaithaweru19@gmail.com'
-
-django_heroku.settings(locals())
+EMAIL_HOST_PASSWORD='aegmangfmodzfdoj'

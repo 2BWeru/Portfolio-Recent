@@ -5,20 +5,18 @@ from django.conf import settings
 
 def home(request):
     if request.method == 'POST':
-        Fullname = request.POST['Fullname']
-        Phonenumber = request.POST['Phone']
-        Email = request.POST['Email']
-        Subject = request.POST['Subject']
-        Message = request.POST['Message']
+        name = request.POST['name']
+        email = request.POST['email']
+        message = request.POST['message']
 
         # send email
         send_mail(
-            Subject,
-            "From: "+ Fullname + " \n\n "+ "Phone Number: "+ Phonenumber +" \n\n  "+"Subject: " + Subject + " \n\n\n" + Message + "\n\n"+"Thank You,"+"\n\n\n"+ "@ Expanse Products Ltd",#message
-            Email,# from 
+            name,
+            email,# from 
+            message,
             [settings.EMAIL_HOST_USER,],#to email
         )
 
-        return render(request,'home.html',{'Message':Message,'Email':Email,'Fullname':Fullname,'Phonenumber':Phonenumber,"Subject":Subject})
+        return render(request,'home.html',{'message':message,'email':email,'name':name})
     else:
         return render(request,'index.html')
